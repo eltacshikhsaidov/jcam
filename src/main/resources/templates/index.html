@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="UTF-8">
+        <title>Index</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <div style="display: inline-block; margin-top: 10%;">
+            <h3>Captured image</h3>
+            <img th:src="${'data:image/png;base64,' + image}"
+                style="border-radius: 5px;"
+                alt="image" height="250" width="250"
+                id="image">
+        </div>
+
+    </body>
+</html>
